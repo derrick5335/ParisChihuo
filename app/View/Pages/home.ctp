@@ -1,0 +1,1 @@
+<h1>Welcome to Paris Chihuo, this web site is based on cake php</h1>
