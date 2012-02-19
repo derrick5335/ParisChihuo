@@ -63,3 +63,6 @@
 2012-02-14 22:18:56 Error: [MissingControllerException] Controller class PostController could not be found.
 #0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-02-19 10:21:37 Error: [MissingControllerException] Controller class Index.phpController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
