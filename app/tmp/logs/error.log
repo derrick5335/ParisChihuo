@@ -132,3 +132,9 @@
 2012-02-19 12:07:32 Error: [MissingControllerException] Controller class AssetsController could not be found.
 #0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-02-19 16:25:51 Error: [MissingControllerException] Controller class READMEController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-19 18:10:39 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -30,10 +30,11 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<?php
 	//include neccessay libs and css to make cake php and bootstrap work together
 	
-	echo $this->Html->css('bootstrap.min');
+	echo $this->Html->css('bootstrap.min.css');
 	echo $this->Html->css('app.css');
+	echo $this->Html->css('bootstrap-responsive.min');
 	echo $this->Html->script('libs/jquery-1.7.1.js');
-	echo $this->Html->script('libs/bootstrap.min.js');
+	echo $this->Html->script('libs/bootstrap.js');
 	echo $this->Html->script('cakebootstrap.js');
 		
 	?>
