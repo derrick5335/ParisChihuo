@@ -15,10 +15,10 @@ class PostsController extends AppController {
 	public function add() {
 	        if ($this->request->is('post')) {
 	            if ($this->Post->save($this->request->data)) {
-	                $this->Session->setFlash('Your post has been saved.');
+	                $this->Session->setFlash('餐馆信息保存成功.', 'default',array('class' => 'message alert-message success'));
 	                $this->redirect(array('action' => 'index'));
 	            } else {
-	                $this->Session->setFlash('Unable to add your post.');
+	                $this->Session->setFlash('创建餐馆失败.');
 	            }
 	        }
 	 }
@@ -29,10 +29,10 @@ class PostsController extends AppController {
 	        $this->request->data = $this->Post->read();
 	    } else {
 	        if ($this->Post->save($this->request->data)) {
-	            $this->Session->setFlash('Your post has been updated.');
+	            $this->Session->setFlash('餐馆信息已经更新.',array('class' => 'message alert-message success'));
 	            $this->redirect(array('action' => 'index'));
 	        } else {
-	            $this->Session->setFlash('Unable to update your post.');
+	            $this->Session->setFlash('修改餐馆信息失败.');
 	        }
 	    }
 	}
@@ -42,7 +42,7 @@ class PostsController extends AppController {
 	        throw new MethodNotAllowedException();
 	    }
 	    if ($this->Post->delete($id)) {
-	        $this->Session->setFlash('The post with id: ' . $id . ' has been deleted.');
+	        $this->Session->setFlash('餐馆已被删除.','default',array('class' => 'message alert-message success'));
 	        $this->redirect(array('action' => 'index'));
 	    }
 	}

@@ -138,3 +138,43 @@
 2012-02-19 18:10:39 Error: [MissingControllerException] Controller class CssController could not be found.
 #0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-02-21 22:32:35 Error: [MissingControllerException] Controller class AddController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-21 22:32:43 Error: [MissingControllerException] Controller class AddController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-21 23:16:31 Error: [MissingControllerException] Controller class AddController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-21 23:16:58 Error: [MissingControllerException] Controller class AddController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-21 23:28:07 Error: [MissingControllerException] Controller class AddController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-22 20:52:54 Error: [MissingControllerException] Controller class AddController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-22 20:53:17 Error: [MissingControllerException] Controller class AddController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-22 22:16:02 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-22 22:16:05 Error: [MethodNotAllowedException] Method Not Allowed
+#0 [internal function]: PostsController->delete('21')
+#1 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-02-22 22:21:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-22 22:22:56 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-22 22:22:57 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
