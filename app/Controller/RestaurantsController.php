@@ -1,20 +1,22 @@
 <?php
-class PostsController extends AppController {
-    public $name = 'Posts';
+class RestaurantsController extends AppController {
+    public $name = 'Restaurants';
     public $helpers = array('Html', 'Form');
+    public $components = array('Session');
 
     public function index() {
-        $this->set('posts', $this->Post->find('all'));
+        $this->set('restaurants', $this->Restaurant->find('all'));
     }
 
 	public function view($id = null) {
-	        $this->Post->id = $id;
-	        $this->set('post', $this->Post->read());
+	        $this->Restaurant->id = $id;
+	        $this->set('restaurant', $this->Restaurant->read());
 	}
 	
 	public function add() {
 	        if ($this->request->is('post')) {
-	            if ($this->Post->save($this->request->data)) {
+	        	
+	            if ($this->Restaurant->save($this->request->data)) {
 	                $this->Session->setFlash('餐馆信息保存成功.', 'default',array('class' => 'message alert-message success'));
 	                $this->redirect(array('action' => 'index'));
 	            } else {
@@ -24,11 +26,11 @@ class PostsController extends AppController {
 	 }
 	
 	function edit($id = null) {
-	    $this->Post->id = $id;
+	    $this->Restaurant->id = $id;
 	    if ($this->request->is('get')) {
-	        $this->request->data = $this->Post->read();
+	        $this->request->data = $this->Restaurant->read();
 	    } else {
-	        if ($this->Post->save($this->request->data)) {
+	        if ($this->Restaurant->save($this->request->data)) {
 	            $this->Session->setFlash('餐馆信息已经更新.',array('class' => 'message alert-message success'));
 	            $this->redirect(array('action' => 'index'));
 	        } else {
@@ -41,7 +43,7 @@ class PostsController extends AppController {
 	    if ($this->request->is('get')) {
 	        throw new MethodNotAllowedException();
 	    }
-	    if ($this->Post->delete($id)) {
+	    if ($this->Restaurant->delete($id)) {
 	        $this->Session->setFlash('餐馆已被删除.','default',array('class' => 'message alert-message success'));
 	        $this->redirect(array('action' => 'index'));
 	    }

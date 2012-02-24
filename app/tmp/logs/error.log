@@ -178,3 +178,22 @@
 2012-02-22 22:22:57 Error: [MissingControllerException] Controller class ImgController could not be found.
 #0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-02-23 23:58:23 Error: [MissingConnectionException] Database connection "SQLSTATE[42000] [1049] Unknown database 'blogsys'" is missing, or could not be created.
+#0 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Datasource/DboSource.php(244): Mysql->connect()
+#1 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Model.php(3234): ConnectionManager::getDataSource('default')
+#3 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Model.php(1030): Model->setDataSource('default')
+#4 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Model.php(3258): Model->setSource('restaurants')
+#5 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Model.php(2483): Model->getDataSource()
+#6 /Applications/MAMP/htdocs/ParisChihuo/app/Controller/RestaurantsController.php(7): Model->find('all')
+#7 [internal function]: RestaurantsController->index()
+#8 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(RestaurantsController), Array)
+#9 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(RestaurantsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-23 23:59:31 Error: [MissingActionException] Action RestaurantsController::a() could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(RestaurantsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

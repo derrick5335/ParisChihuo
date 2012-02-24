@@ -17,7 +17,7 @@
 <body>
 
     <h1>餐馆列表</h1><br>
-    <button class="btn" onclick="location.href='/ParisChihuo/Posts/add'">添加</button>
+    <button class="btn" onclick="location.href='/ParisChihuo/Restaurants/add'">添加</button>
 
     <p></p>
 
@@ -27,21 +27,21 @@
 
             <th>编辑</th>
 
-            <th>创建时间</th>
+            <th>地址</th>
         </tr><!-- Here's where we loop through our $posts array, printing out post info -->
-        <?php foreach ($posts as $post): ?>
+        <?php foreach ($restaurants as $post): ?>
 
         <tr>
         
-            <td><?php echo $this->Html->link($post['Post']['title'], array('action' => 'view', $post['Post']['id']));?></td>
+            <td><?php echo $this->Html->link($post['Restaurant']['li'], array('action' => 'view', $post['Restaurant']['id']));?></td>
 
             <td><?php echo $this->Form->postLink(
                             '删除',
-                            array('action' => 'delete', $post['Post']['id']),
+                            array('action' => 'delete', $post['Restaurant']['id']),
                             array('confirm' => '确定要删除餐馆吗?'));
-                        ?><?php echo $this->Html->link('修改', array('action' => 'edit', $post['Post']['id']));?></td>
+                        ?><?php echo $this->Html->link('修改', array('action' => 'edit', $post['Restaurant']['id']));?></td>
 
-            <td><?php echo $post['Post']['created']; ?></td>
+            <td><?php echo $post['Restaurant']['addr']; ?></td>
         </tr><?php endforeach; ?>
     </table>
 </body>
