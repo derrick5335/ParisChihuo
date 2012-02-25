@@ -55,6 +55,11 @@
                                         <input type="text" class="search-query" placeholder="搜索" />
                                     </form>
                                 </li>
+
+                            </ul>
+                            
+                            <ul class="nav pull-right">
+                            	 <li class="pull-right"><a href="#">登陆</a></li>
                             </ul>
                         </div>
                     </div>
@@ -113,4 +118,5 @@
     //]]>
     </script>
 </body>
+
 </html>

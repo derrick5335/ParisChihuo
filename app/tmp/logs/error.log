@@ -197,3 +197,9 @@
 #1 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(RestaurantsController), Object(CakeRequest), Object(CakeResponse))
 #2 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2012-02-25 09:04:36 Error: [MissingControllerException] Controller class PostsController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-25 09:04:38 Error: [MissingControllerException] Controller class PostsController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
