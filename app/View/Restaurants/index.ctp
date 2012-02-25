@@ -16,12 +16,12 @@
 
 <body>
 
-    <h1>餐馆列表</h1><br>
+    <legend>餐馆列表</legend><br>
     <button class="btn" onclick="location.href='/ParisChihuo/Restaurants/add'">添加</button>
 
     <p></p>
 
-    <table>
+    <table class="table table-striped table-bordered table-condensed">
         <tr>
             <th>餐馆名称</th>
 

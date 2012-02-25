@@ -5,36 +5,61 @@
 <head>
 
     <script type="text/javascript">
+//<![CDATA[
 
     $(document).ready(function(){  
-	    $('#myCarousel').carousel({
-	      interval: 2000
-	    });
+        
+        $('#myCarousel').carousel({
+          interval: 2000
+        });
+                
     }); 
-    
-   
-	/*
-	** google analytics
-	*/
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-28041840-1']);
-	_gaq.push(['_setDomainName', 'chihuo.fr']);
-	_gaq.push(['_trackPageview']);
-	
-	(function() {
-	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
+
+
+    /*
+    ** google analytics
+    */
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28041840-1']);
+    _gaq.push(['_setDomainName', 'chihuo.fr']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 
 
 
+    //]]>
     </script>
 
     <title></title>
 </head>
 
 <body>
+    <div class="modal fade" id="loginWin">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+
+            <h3>登陆</h3>
+        </div>
+
+        <div class="modal-body">
+            <form>
+            
+                <input type="text" placeholder="电子邮件" />
+                <input type="password" placeholder="密码" />
+                
+            </form>
+        </div>
+
+        <div class="modal-footer">
+            <a href="#" class="btn btn-primary">登陆</a> <a onclick="$('#loginWin').modal('hide');" class="btn">取消</a>
+        </div>
+    </div>
+
     <div id="container">
         <div id="header">
             <div class="navbar navbar-fixed-top">
@@ -55,11 +80,10 @@
                                         <input type="text" class="search-query" placeholder="搜索" />
                                     </form>
                                 </li>
-
                             </ul>
-                            
+
                             <ul class="nav pull-right">
-                            	 <li class="pull-right"><a href="#">登陆</a></li>
+                                <li class="pull-right"><a data-toggle="modal" href="#loginWin">登陆</a></li>
                             </ul>
                         </div>
                     </div>
@@ -81,7 +105,8 @@
                             <img src="http://media.xineurope.com/forum/day_081212/20081212_e7c3f5cf42306df7abaax95RzuNYfjbe.jpg" alt="" />
 
                             <div class="carousel-caption">
-                                <h4>绝代MIX拼盘</h4>            
+                                <h4>绝代MIX拼盘</h4>
+
                                 <p>四种美味，一网打尽!</p>
                             </div>
                         </div>
@@ -118,5 +143,4 @@
     //]]>
     </script>
 </body>
-
 </html>

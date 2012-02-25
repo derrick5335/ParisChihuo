@@ -1,4 +1,4 @@
-<h1>编辑餐馆</h1>
+<legend>编辑餐馆</legend>
 <?php
     echo $this->Form->create('Restaurant', array('action' => 'edit'));
     echo $this->Form->input('li',array('label' => '餐馆名称'));

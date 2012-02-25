@@ -31,7 +31,7 @@ class RestaurantsController extends AppController {
 	        $this->request->data = $this->Restaurant->read();
 	    } else {
 	        if ($this->Restaurant->save($this->request->data)) {
-	            $this->Session->setFlash('餐馆信息已经更新.',array('class' => 'message alert-message success'));
+	            $this->Session->setFlash('餐馆信息已经更新.','default' ,array('class' => 'message alert-message success'));
 	            $this->redirect(array('action' => 'index'));
 	        } else {
 	            $this->Session->setFlash('修改餐馆信息失败.');
