@@ -203,3 +203,56 @@
 2012-02-25 09:04:38 Error: [MissingControllerException] Controller class PostsController could not be found.
 #0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-02-26 00:36:31 Error: [MissingControllerException] Controller class RController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-26 00:40:03 Error: [MissingControllerException] Controller class RController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-26 11:05:46 Error: [MissingControllerException] Controller class PostsController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-26 11:05:49 Error: [MissingControllerException] Controller class PController could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-02-26 11:05:54 Error: [MissingDatasourceException] Datasource class Mysql could not be found.
+#0 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/ConnectionManager.php(97): ConnectionManager::loadDataSource('default')
+#1 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Model.php(3234): ConnectionManager::getDataSource('default')
+#2 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Model.php(1030): Model->setDataSource('default')
+#3 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Model.php(3258): Model->setSource('restaurants')
+#4 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Model.php(2483): Model->getDataSource()
+#5 /Applications/MAMP/htdocs/ParisChihuo/app/Controller/RestaurantsController.php(8): Model->find('all')
+#6 [internal function]: RestaurantsController->index()
+#7 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(RestaurantsController), Array)
+#8 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(RestaurantsController), Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-02-26 11:09:15 Error: [MissingConnectionException] Database connection "SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (61)" is missing, or could not be created.
+#0 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Datasource/DboSource.php(244): Mysql->connect()
+#1 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Model.php(3234): ConnectionManager::getDataSource('default')
+#3 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Model.php(1030): Model->setDataSource('default')
+#4 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Model.php(3258): Model->setSource('restaurants')
+#5 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Model.php(2483): Model->getDataSource()
+#6 /Applications/MAMP/htdocs/ParisChihuo/app/Controller/RestaurantsController.php(8): Model->find('all')
+#7 [internal function]: RestaurantsController->index()
+#8 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(RestaurantsController), Array)
+#9 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(RestaurantsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-02-26 11:09:16 Error: [MissingConnectionException] Database connection "SQLSTATE[HY000] [2003] Can't connect to MySQL server on '127.0.0.1' (61)" is missing, or could not be created.
+#0 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Datasource/DboSource.php(244): Mysql->connect()
+#1 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Model.php(3234): ConnectionManager::getDataSource('default')
+#3 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Model.php(1030): Model->setDataSource('default')
+#4 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Model.php(3258): Model->setSource('restaurants')
+#5 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Model/Model.php(2483): Model->getDataSource()
+#6 /Applications/MAMP/htdocs/ParisChihuo/app/Controller/RestaurantsController.php(8): Model->find('all')
+#7 [internal function]: RestaurantsController->index()
+#8 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Controller/Controller.php(473): ReflectionMethod->invokeArgs(Object(RestaurantsController), Array)
+#9 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Routing/Dispatcher.php(104): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/ParisChihuo/lib/Cake/Routing/Dispatcher.php(86): Dispatcher->_invoke(Object(RestaurantsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/ParisChihuo/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
